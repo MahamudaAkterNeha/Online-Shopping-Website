@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "346331832192",
+    "project_id": "clickcart-8f04e",
+    "storage_bucket": "clickcart-8f04e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:346331832192:android:3e22689a8a2a03cf0deb65",
+        "android_client_info": {
+          "package_name": "com.example.clickcart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "346331832192-5c417g7jjkckmma08s2bg48llc1knl44.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJqhr41NSaaax0Lt_4XGIJZM-z8tlfOkU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "346331832192-5c417g7jjkckmma08s2bg48llc1knl44.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

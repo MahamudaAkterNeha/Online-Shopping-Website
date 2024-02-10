@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background = "@drawable/homebg"
+    tools:context=".activities.AddressActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/address_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#A58E86"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Your Address" />
+
+    <TextView
+        android:id="@+id/choosetext"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="14dp"
+        android:layout_marginTop="20dp"
+        android:text="Choose Your Address :"
+        android:fontFamily="cursive"
+        android:textColor="@color/black"
+        android:background="#A58E86"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintWidth_percent=".9"
+        app:layout_constraintTop_toBottomOf="@+id/address_toolbar" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/address_recycler"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent=".9"
+        app:layout_constraintTop_toBottomOf="@+id/choosetext"
+        app:layout_constraintBottom_toTopOf="@+id/add_address_btn"
+        tools:listitem="@layout/address_item" />
+
+    <Button
+        android:id="@+id/add_address_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="Add Address"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:backgroundTint="#A178D1"
+        app:layout_constraintBottom_toTopOf="@+id/payment_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent=".9"/>
+
+    <Button
+        android:id="@+id/payment_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:padding="15dp"
+        android:text="Continue To Payment"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/purple_700"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent=".9"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

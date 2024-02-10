@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background = "@drawable/homebg"
+    tools:context=".activities.PickupActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/pickup_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#A58E86"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Pick-Up Point " />
+
+    <TextView
+        android:id="@+id/pickuptext"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="14dp"
+        android:layout_marginTop="20dp"
+        android:text="Choose Pick-Up Location :"
+        android:fontFamily="cursive"
+        android:textColor="@color/black"
+        android:background="#A58E86"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintWidth_percent=".9"
+        app:layout_constraintTop_toBottomOf="@+id/pickup_toolbar" />
+
+    <TextView
+        android:id="@+id/radiomsg1"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="15dp"
+        android:text="Malibagh"
+        android:fontFamily="cursive"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pickuptext"/>
+
+    <RadioButton
+        android:id="@+id/radio1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintStart_toEndOf="@+id/radiomsg1"
+        app:layout_constraintTop_toBottomOf="@+id/pickuptext"/>
+
+    <TextView
+        android:id="@+id/radiomsg2"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="25dp"
+        android:text="Mogbazar"
+        android:fontFamily="cursive"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radiomsg1"/>
+
+    <RadioButton
+        android:id="@+id/radio2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintStart_toEndOf="@+id/radiomsg2"
+        app:layout_constraintTop_toBottomOf="@+id/radio1"/>
+
+    <TextView
+        android:id="@+id/radiomsg3"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="cursive"
+        android:text="Gulshan"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radiomsg2" />
+
+    <RadioButton
+        android:id="@+id/radio3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintStart_toEndOf="@+id/radiomsg3"
+        app:layout_constraintTop_toBottomOf="@+id/radio2"/>
+
+    <TextView
+        android:id="@+id/radiomsg4"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="cursive"
+        android:text="Dhanmondi"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radiomsg3" />
+
+    <RadioButton
+        android:id="@+id/radio4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintStart_toEndOf="@+id/radiomsg4"
+        app:layout_constraintTop_toBottomOf="@+id/radio3"/>
+
+    <TextView
+        android:id="@+id/radiomsg5"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="cursive"
+        android:text="Uttara"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radiomsg4" />
+
+    <RadioButton
+        android:id="@+id/radio5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintStart_toEndOf="@+id/radiomsg5"
+        app:layout_constraintTop_toBottomOf="@+id/radio4"/>
+
+    <TextView
+        android:id="@+id/radiomsg6"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="cursive"
+        android:text="Khilgaon"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radiomsg5" />
+
+    <RadioButton
+        android:id="@+id/radio6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintStart_toEndOf="@+id/radiomsg6"
+        app:layout_constraintTop_toBottomOf="@+id/radio5"/>
+
+    <TextView
+        android:id="@+id/radiomsg7"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="cursive"
+        android:text="Banani"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radiomsg6" />
+
+    <RadioButton
+        android:id="@+id/radio7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintStart_toEndOf="@+id/radiomsg7"
+        app:layout_constraintTop_toBottomOf="@+id/radio6"/>
+
+    <TextView
+        android:id="@+id/radiomsg8"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="cursive"
+        android:text="Jatrabari"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radiomsg7" />
+
+    <RadioButton
+        android:id="@+id/radio8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintStart_toEndOf="@+id/radiomsg8"
+        app:layout_constraintTop_toBottomOf="@+id/radio7"/>
+
+    <TextView
+        android:id="@+id/radiomsg9"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="cursive"
+        android:text="Baridhara"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radiomsg8" />
+
+    <RadioButton
+        android:id="@+id/radio9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintStart_toEndOf="@+id/radiomsg9"
+        app:layout_constraintTop_toBottomOf="@+id/radio8"/>
+
+    <TextView
+        android:id="@+id/radiomsg10"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="cursive"
+        android:text="Mirpur"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radiomsg9" />
+
+    <RadioButton
+        android:id="@+id/radio10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintStart_toEndOf="@+id/radiomsg10"
+        app:layout_constraintTop_toBottomOf="@+id/radio9"/>
+
+    <Button
+        android:id="@+id/confirm_pickup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_marginBottom="40dp"
+        android:text="Confirm Pick-Up Point"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/purple_700"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent=".9"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background = "@drawable/homebg"
+    tools:context=".activities.AddressActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/pay_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#A58E86"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Make Payment" />
+
+    <TextView
+        android:id="@+id/choosetext"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#A58E86"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:padding="14dp"
+        android:text="Choose Option :"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pay_toolbar"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintWidth_percent=".9" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/payment_recycler"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/add_payment_details"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/choosetext"
+        app:layout_constraintWidth_percent=".9"
+        tools:listitem="@layout/payment_item" />
+
+    <Button
+        android:id="@+id/add_payment_details"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:text="Add Payment Details"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/purple_200"
+        app:layout_constraintBottom_toTopOf="@+id/make_payment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent=".9"/>
+
+    <Button
+        android:id="@+id/make_payment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Make Payment"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#A178D1"
+        android:padding="12dp"
+        android:textAllCaps="false"
+        app:layout_constraintWidth_percent=".9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/pickUp"/>
+
+    <Button
+        android:id="@+id/pickUp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:text="Choose PickUp Point"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/purple_500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent=".9"
+        app:layout_constraintBottom_toTopOf="@+id/returnHome"/>
+
+    <Button
+        android:id="@+id/returnHome"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="40dp"
+        android:text="Home"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/purple_700"
+        android:padding="12dp"
+        android:textAllCaps="false"
+        app:layout_constraintWidth_percent=".9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
